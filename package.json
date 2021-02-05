@@ -1,7 +1,5 @@
 {
     "name": "lib.sbmr.in",
-    "version": "1.0.0",
-    "main": "index.js",
     "repository": "git@github.com:DevSubmarinonline/lib.sbmr.in",
     "author": "YamaD <yamad@submarin.online>",
     "license": "MIT",
