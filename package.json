@@ -1,0 +1,15 @@
+{
+    "name": "lib.sbmr.in",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:DevSubmarinonline/lib.sbmr.in",
+    "author": "YamaD <yamad@submarin.online>",
+    "license": "MIT",
+    "devDependencies": {
+        "cjp": "^0.5.1"
+    },
+    "scripts": {
+        "build": "npm run build:cjp",
+        "build:cjp": "parcel build -d pub src/cjp.js"
+    }
+}

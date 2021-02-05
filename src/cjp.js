@@ -1,0 +1,1 @@
+window.cjp = require('cjp')
