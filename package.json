@@ -4,8 +4,8 @@
     "author": "YamaD <yamad@submarin.online>",
     "license": "MIT",
     "devDependencies": {
-        "cjp": "^0.5.1",
-        "parcel-bundler": "^1.12.4"
+        "cjp": "latest",
+        "parcel-bundler": ""
     },
     "scripts": {
         "build": "npm run build:cjp",
