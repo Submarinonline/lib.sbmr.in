@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         怪しいDeck
 // @namespace    https://lib.sbmr.in/deck.js
-// @version      .1.0
+// @version      1.1.0
 // @description  正しい日本語をDeckで。
 // @author       YamaD(@yamad_linuxer) and kris(@yuuki76)
 // @match        https://tweetdeck.twitter.com/
