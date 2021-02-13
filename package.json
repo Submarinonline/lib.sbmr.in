@@ -9,6 +9,6 @@
     },
     "scripts": {
         "build": "npm run build:cjp",
-        "build:cjp": "parcel build -d pub src/cjp.js"
+        "build:cjp": "parcel build -d pub src/*.js"
     }
 }
