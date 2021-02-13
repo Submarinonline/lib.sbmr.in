@@ -6,5 +6,7 @@
 // @author       YamaD(@yamad_linuxer) and kris(@yuuki76)
 // @match        https://tweetdeck.twitter.com/
 // @grant        none
+// @updateURL    https://lib.sbmr.in/deck.js
 // @license      MIT
 // ==/UserScript==
+
