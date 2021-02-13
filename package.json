@@ -5,11 +5,13 @@
     "license": "MIT",
     "devDependencies": {
         "cjp": "latest",
-        "parcel-bundler": "1.x"
+        "parcel-bundler": "1.x",
+        "parcel-plugin-greasemonkey": "1.x"
     },
     "scripts": {
-        "build": "npm run build:static && npm run build:cjp",
+        "build": "npm run build:static && npm run build:cjp && npm run build:deck",
         "build:static": "mkdir -p pub && cp -r static/* pub/",
-        "build:cjp": "parcel build -d pub src/*.js"
+        "build:cjp": "parcel build -d pub src/cjp/cjp.js",
+        "build:deck": "cd src/deck/ && parcel build -d ../../pub *.js"
     }
 }
