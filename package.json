@@ -8,7 +8,8 @@
         "parcel-bundler": "1.x"
     },
     "scripts": {
-        "build": "npm run build:cjp",
+        "build": "npm run build:static && npm run build:cjp",
+        "build:static": "mkdir -p pub && cp -r static/* pub/",
         "build:cjp": "parcel build -d pub src/*.js"
     }
 }
