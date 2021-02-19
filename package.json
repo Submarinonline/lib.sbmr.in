@@ -1,17 +1,18 @@
 {
     "name": "lib.sbmr.in",
-    "repository": "git@github.com:DevSubmarinonline/lib.sbmr.in",
+    "version": "0.1.0",
     "author": "YamaD <yamad@submarin.online>",
-    "license": "MIT",
     "devDependencies": {
-        "cjp": "latest",
+        "cjp": "1.x",
         "parcel-bundler": "1.x",
         "parcel-plugin-greasemonkey": "1.x"
     },
+    "license": "MIT",
+    "repository": "git@github.com:DevSubmarinonline/lib.sbmr.in",
     "scripts": {
         "build": "npm run build:static && npm run build:cjp && npm run build:deck",
-        "build:static": "mkdir -p pub && cp -r static/* pub/",
         "build:cjp": "parcel build -d pub src/cjp/cjp.js",
-        "build:deck": "cd src/deck/ && parcel build -d ../../pub *.js"
+        "build:deck": "cd src/deck/ && parcel build -d ../../pub *.js",
+        "build:static": "mkdir -p pub && cp -r static/* pub/"
     }
 }
