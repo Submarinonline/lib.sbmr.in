@@ -34,6 +34,9 @@ const initCjp = () => {
             cjpButton.classList.add('is-disabled')
         }
     })
+    tweetButton.addEventListener('click', () => {
+        cjpButton.classList.add('is-disabled')
+    })
 }
 
 document.addEventListener('keydown', initCjp)
