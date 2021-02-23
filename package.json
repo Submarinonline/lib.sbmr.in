@@ -11,7 +11,7 @@
     "repository": "git@github.com:DevSubmarinonline/lib.sbmr.in",
     "scripts": {
         "build": "npm run build:static && npm run build:cjp && npm run build:deck",
-        "build:cjp": "parcel build -d pub src/cjp/cjp.js",
+        "build:cjp": "parcel build -d pub --no-source-maps src/cjp/cjp.js",
         "build:deck": "cd src/deck/ && parcel build -d ../../pub --no-source-maps *.js",
         "build:static": "mkdir -p pub && cp -r static/* pub/"
     }
