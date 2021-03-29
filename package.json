@@ -1,18 +1,17 @@
 {
     "name": "lib.sbmr.in",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "author": "YamaD <yamad@submarin.online>",
     "devDependencies": {
         "cjp": "1.x",
-        "parcel-bundler": "1.x",
-        "parcel-plugin-greasemonkey": "1.x"
+        "esbuild": "^0.11.0"
     },
     "license": "MIT",
     "repository": "git@github.com:DevSubmarinonline/lib.sbmr.in",
     "scripts": {
-        "build": "npm run build:static && npm run build:cjp && npm run build:deck",
-        "build:cjp": "parcel build -d pub --no-source-maps src/cjp/cjp.js",
-        "build:deck": "cd src/deck/ && parcel build -d ../../pub --no-source-maps *.js",
-        "build:static": "mkdir -p pub && cp -r static/* pub/"
+        "build": "mkdir -p pub && npm run build:static && npm run build:cjp && npm run build:deck",
+        "build:cjp": "esbuild --bundle src/cjp/cjp.js --outdir=pub --minify",
+        "build:deck": "node src/deck/greasemonkey.js > /tmp/greasemonkey.header && esbuild --bundle src/deck/deck.js --minify | cat /tmp/greasemonkey.header - > pub/deck.js",
+        "build:static": "cp -r static/* pub/"
     }
 }

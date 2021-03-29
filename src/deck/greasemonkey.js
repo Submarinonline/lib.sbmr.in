@@ -1,7 +1,8 @@
+console.log(`
 // ==UserScript==
 // @name         怪しいDeck
 // @namespace    https://lib.sbmr.in/deck.js
-// @version      1.3.2
+// @version      ${require('../../node_modules/cjp/package.json').version}
 // @description  正しい日本語をDeckで。
 // @author       YamaD(@yama-d-aichi) and kris(@yuuki76)
 // @match        https://tweetdeck.twitter.com/
@@ -9,4 +10,4 @@
 // @updateURL    https://lib.sbmr.in/deck.js
 // @license      MIT
 // ==/UserScript==
-
+`)
