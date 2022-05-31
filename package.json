@@ -1,16 +1,16 @@
 {
-    "name": "lib.sbmr.in",
-    "version": "0.3.0",
-    "author": "YamaD",
-    "devDependencies": {
-        "cjp": "1.x",
-        "esbuild": "0.14.0"
-    },
-    "license": "MIT",
-    "scripts": {
-        "build": "mkdir -p pub && npm run build:static && npm run build:cjp && npm run build:deck",
-        "build:cjp": "esbuild --bundle src/cjp/cjp.js --outdir=pub --charset=utf8 --minify",
-        "build:deck": "node src/deck/greasemonkey.js > /tmp/greasemonkey.header && esbuild --bundle src/deck/deck.js --minify | cat /tmp/greasemonkey.header - > pub/deck.js",
-        "build:static": "cp -r static/* pub/"
-    }
+  "name": "lib.sbmr.in",
+  "version": "0.4.0",
+  "author": "YamaD",
+  "devDependencies": {
+    "cjp": "2.x",
+    "esbuild": "0.14.42"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "mkdir -p pub && npm run build:static && npm run build:cjp && npm run build:deck",
+    "build:cjp": "esbuild --bundle src/cjp/cjp.js --outdir=pub --charset=utf8 --minify",
+    "build:deck": "node src/deck/greasemonkey.js > /tmp/greasemonkey.header && esbuild --bundle src/deck/deck.js --minify | cat /tmp/greasemonkey.header - > pub/deck.js",
+    "build:static": "cp -r static/* pub/"
+  }
 }
