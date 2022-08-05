@@ -1,10 +1,10 @@
 {
   "name": "lib.sbmr.in",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "author": "YamaD",
   "devDependencies": {
-    "cjp": "2.0.2",
-    "esbuild": "0.14.42"
+    "cjp": "2.x",
+    "esbuild": "0.14.53"
   },
   "license": "MIT",
   "scripts": {
