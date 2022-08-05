@@ -11,7 +11,7 @@
   "scripts": {
     "build": "mkdir -p pub && run-p build:*",
     "build:cjp": "esbuild --minify --charset=utf8 --format=iife --bundle src/cjp/cjp.js --outfile=pub/cjp.js",
-    "build:deck": "cat <(node src/deck/greasemonkey.cjs) <(esbuild --minify --charset=utf8 --format=iife --bundle src/deck/deck.js) > pub/deck.js",
+    "build:deck": "bash -c 'cat <(node src/deck/greasemonkey.cjs) <(esbuild --minify --charset=utf8 --format=iife --bundle src/deck/deck.js)' > pub/deck.js",
     "build:static": "cp -r static/* pub/"
   }
 }
